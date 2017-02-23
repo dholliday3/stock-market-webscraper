@@ -19,7 +19,7 @@ def StockMarket():
     #write to CSV
     counter = 0
     if counter == 0:
-        file = open("HW7Output.csv", 'w', newline='')
+        file = open("Output.csv", 'w', newline='')
         csvWriter = csv.writer(file)
         csvWriter.writerow(['Time', 'Apple Stock Price', 'Apple Net Change', 'Apple Percent Change', 'Microsoft Stock Price', 'Microsoft Net Change', 'Microsoft Percent Change',
                             'Google Stock Price', 'Google Net Change', 'Google Percent Change','Netflix Stock Price', 'Netflix Net Change', 'Netflix Percent Change',
@@ -94,7 +94,7 @@ def StockMarket():
         print(myRow)
         time.sleep(1800)
 
-        file = open("HW7Output.csv", 'a', newline='')
+        file = open("Output.csv", 'a', newline='')
         csvWriter = csv.writer(file)
         csvWriter.writerow(myRow)
         file.close()
