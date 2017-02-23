@@ -4,11 +4,11 @@ from tkinter import*
 
 ## Notes
 # 
-class HW7GUI:
+class GUI:
         
     def __init__(self, rWin):
         self.rWin = rWin
-        self.rWin.title('HW7 GUI')
+        self.rWin.title('GUI')
         self.f1 = Frame(self.rWin, bg = 'blue').grid()
         self.var1 = StringVar()
         self.e1 = Entry(self.f1, textvariable=self.var1, width=70, state='readonly').grid(row=0, column=1)
@@ -74,7 +74,7 @@ class HW7GUI:
 
 
 rWin = Tk()
-app = HW7GUI(rWin)
+app = GUI(rWin)
 rWin.mainloop()
 
 
